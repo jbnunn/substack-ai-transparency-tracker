@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Substack AI Transparency Tracker",
+  "version": "1.0.0",
+  "description": "Track and mark AI-generated or AI-modified content in your Substack posts",
+  "permissions": ["storage", "contextMenus", "activeTab"],
+  "host_permissions": ["https://*.substack.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.substack.com/*", "file://*"],
+      "js": ["content-script.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Substack AI Transparency Tracker"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/ss-16.png",
+    "48": "icons/ss-48.png",
+    "128": "icons/ss-128.png"
+  }
+}

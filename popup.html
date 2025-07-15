@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Transparency Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="ai-tracker-popup">
+        <h2>AI Transparency Tracker</h2>
+        
+        <div id="stats-container" class="ai-tracker-stats">
+            <div class="ai-tracker-stat-row">
+                <span class="ai-tracker-stat-label">Total Words:</span>
+                <span class="ai-tracker-stat-value" id="total-words">0</span>
+            </div>
+            <div class="ai-tracker-stat-row">
+                <span class="ai-tracker-stat-label">AI Words:</span>
+                <span class="ai-tracker-stat-value" id="ai-words">0</span>
+            </div>
+            <div class="ai-tracker-stat-row">
+                <span class="ai-tracker-stat-label">Human Words:</span>
+                <span class="ai-tracker-stat-value" id="human-words">0</span>
+            </div>
+        </div>
+
+        <div class="ai-tracker-percentage" id="percentage">
+            0%
+        </div>
+
+        <div id="report-container" class="ai-tracker-report" style="display: none;">
+            <div id="report-text"></div>
+        </div>
+
+        <div id="no-data" class="ai-tracker-no-data" style="display: none;">
+            No data available. Open a Substack editor to start tracking.
+        </div>
+
+        <button id="copy-report" class="ai-tracker-button" style="display: none;">
+            Copy Report
+        </button>
+        
+        <button id="clear-data" class="ai-tracker-button secondary">
+            Clear All Data
+        </button>
+
+        <div style="margin-top: 16px; font-size: 12px; color: #666; text-align: center;">
+            Select text in the editor and right-click to mark AI usage
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html> 
