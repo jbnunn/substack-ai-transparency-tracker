@@ -47,8 +47,6 @@ Unlike traditional highlighting approaches that wrap text in HTML elements (caus
 
 ### Marking AI Content
 
-**Method 1: Mouse Selection**
-
 1. **Select any text** in your post
 2. **Sidebar automatically shows** selection options
 3. **Click "Mark as AI"** to track the text as AI-generated
