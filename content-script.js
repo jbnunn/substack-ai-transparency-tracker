@@ -680,12 +680,7 @@ class AITracker {
       });
     }
 
-    // Auto-open sidebar if closed
-    if (
-      !document.getElementById("ai-tracker-sidebar").classList.contains("open")
-    ) {
-      this.openSidebar();
-    }
+
   }
 
   hideSelectionPrompt() {

@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Substack AI Transparency Tracker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Track and mark AI-generated or AI-modified content in your Substack posts",
   "permissions": ["storage", "contextMenus", "activeTab"],
   "host_permissions": ["https://*.substack.com/*"],
