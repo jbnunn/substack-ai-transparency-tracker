@@ -1,6 +1,6 @@
 # Substack AI Transparency Tracker
 
-A Chrome extension that helps writers track and mark AI-generated or AI-modified content in their Substack posts. A useful too for providing transparency about AI usage with detailed statistics and annotation management.
+A Chrome extension that helps writers track and mark AI-generated or AI-modified content in their Substack posts and jeffnunn.com pages. A useful tool for providing transparency about AI usage with detailed statistics and annotation management.
 
 ![Demo of Substack AI Transparency Tracker](example.gif)
 
@@ -41,7 +41,7 @@ Unlike traditional highlighting approaches that wrap text in HTML elements (caus
 
 ### Opening the AI Tracker
 
-1. **Navigate to a Substack editor page** (create or edit a post)
+1. **Navigate to a Substack editor page or jeffnunn.com** (create or edit a post)
 2. **Look for the 🤖 button** in the top-right corner
 3. **Click the button** to open the AI Tracker sidebar
 
@@ -83,9 +83,9 @@ The sidebar displays:
 
 ## Troubleshooting
 
-### Extension not working on Substack?
+### Extension not working on Substack or jeffnunn.com?
 
-1. **Check URL**: Make sure you're on a Substack editor page (URL contains `/p/` or `/edit`)
+1. **Check URL**: Make sure you're on a Substack editor page (URL contains `/p/` or `/edit`) or jeffnunn.com
 2. **Refresh page**: Reload the page after installing the extension
 3. **Check permissions**: Verify extension is enabled in `chrome://extensions/`
 4. **Look for button**: The 🤖 button should appear in the top-right corner

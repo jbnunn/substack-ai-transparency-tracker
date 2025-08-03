@@ -1,20 +1,20 @@
 {
   "manifest_version": 3,
-  "name": "Substack AI Transparency Tracker",
-  "version": "1.0.1",
-  "description": "Track and mark AI-generated or AI-modified content in your Substack posts",
+  "name": "AI Transparency Tracker",
+  "version": "1.0.2",
+  "description": "Track and mark AI-generated or AI-modified content in your Substack posts and jeffnunn.com pages",
   "permissions": ["storage", "contextMenus", "activeTab"],
-  "host_permissions": ["https://*.substack.com/*"],
+  "host_permissions": ["https://*.substack.com/*", "https://www.jeffnunn.com/*"],
   "content_scripts": [
     {
-      "matches": ["https://*.substack.com/*", "file://*"],
+      "matches": ["https://*.substack.com/*", "https://www.jeffnunn.com/*", "file://*"],
       "js": ["content-script.js"],
       "css": ["styles.css"]
     }
   ],
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Substack AI Transparency Tracker"
+    "default_title": "AI Transparency Tracker"
   },
   "background": {
     "service_worker": "background.js"

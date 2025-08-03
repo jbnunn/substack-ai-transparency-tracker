@@ -62,6 +62,12 @@ class AITracker {
       this.isSubstackEditor = true;
     }
 
+    // Also enable for jeffnunn.com
+    if (window.location.href.includes("www.jeffnunn.com")) {
+      console.log("Detected jeffnunn.com URL");
+      this.isSubstackEditor = true;
+    }
+
     // Also enable for local test files
     if (
       window.location.protocol === "file:" &&
@@ -97,6 +103,20 @@ class AITracker {
       const postId = match[1];
       console.log("✅ Extracted post ID from draft:", postId);
       return postId;
+    }
+    
+    // For jeffnunn.com URLs, extract from path
+    if (url.includes("www.jeffnunn.com")) {
+      // Extract path segments for unique identification
+      const pathMatch = url.match(/jeffnunn\.com\/(.+?)(?:\?|#|$)/);
+      if (pathMatch) {
+        const pathSlug = pathMatch[1].replace(/\//g, '-');
+        console.log("✅ Extracted jeffnunn.com path slug:", pathSlug);
+        return pathSlug;
+      }
+      // If just the domain, use "home"
+      console.log("✅ Using jeffnunn.com home page ID");
+      return "jeffnunn-home";
     }
     
     // For test files, use the filename
